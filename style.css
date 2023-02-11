@@ -6,19 +6,12 @@
 
 /* Website Styling */
 
-@media (max-width: 320px) {
-  body {
-    background-color: #fffff;
-  }
-}
-
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #e71616;
+    background-color: #0A192F;
 }
 
 
@@ -265,105 +258,55 @@ hr {
 
 /* SKILLS */
 
-.folio-skills {
+.main-folio-about-skills{
     width: 100%;
-    height: 100vh;
+    font-size: 4em;
+    color: white;
+}
+
+.main-folio-skill{
     padding: 70px;
+    width: 100%;
 }
-
-.about-skills {
-    font-size: 3em;
-    font-weight: 200;
-    color: #CCD6F6;
-}
-
-.folio-skills-block {
+.block-main-folio-skill{
     width: 100%;
     display: flex;
-    padding: 20px;
-    height: 70vh;
-
 }
-
-.left-skills {
+.left-main-folio-skill{
     width: 50%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    color: #CCD6F6;
-}
-
-.left-skills-top {
-    width: 100%;
-
-}
-
-.left-skills-top-text {
-    padding: 5px;
-    text-align: justify;
-    font-size: 1.090em;
-
-}
-
-.left-skills-button {
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 2em;
-}
-
-.left-skills-down {
-    width: 100%;
-
-}
-
-
-.skills-image button {
-    width: 100%;
     padding: 20px;
-    border: none;
-    border-radius: 0px 70px 40px 80px;
-    display: flex;
-    margin-bottom: 20px;
+    background-color: red;
+}
+.text-left-main-folio-skill{
+    width: 100%;
+    background-color: rgb(235, 213, 203);
     align-items: center;
     justify-content: center;
-    color: black;
-    font-size: 1em;
-    border-top: 2px solid #009b53;
-    border-left: 2px solid #009b53;
-    box-shadow: 2px 3px rgb(229, 255, 0);
-}
-
-.skills-image-btn:hover {
-    cursor: pointer;
-    background-color: black;
-    color: yellow;
-    transition: 0.5s ease-in-out;
-}
-
-.skills-image-btn:active {
-    box-shadow: 0px 0px 10px gray;
-    transform: translateY(3px);
 }
 
 
-.right-skills {
+.text-left-main-folio-skill{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(235, 213, 203);
+    align-items: center;
+    justify-content: center;
+}
+
+.right-main-folio-skill{
     width: 50%;
+    background-color: yellow;
+    padding: 20px;
+}
+.rishi-skills-image{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2em;
 }
-
-.rishi-skills-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rishi-skills-image img {
-
+.rishi-skills-image img{
     width: 60%;
     box-shadow: 2px 2px rgb(229, 255, 0);
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.409));
@@ -377,10 +320,70 @@ hr {
     box-shadow: 2px 2px rgb(229, 255, 0);
 }
 
+
+.bottom-main-folio-skill{
+width: 100%;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: blueviolet;
+}
+
+.bottom-main-folio-skill-button{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.skills-button{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    width: 33%;
+    background-color: #05ed2c;
+}
+
+.skills-image-btn{
+    width: 50%;
+    padding: 20px;
+    border: none;
+    border-radius: 0px 70px 40px 80px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1em;
+    border-top: 2px solid #009b53;
+    border-left: 2px solid #009b53;
+    box-shadow: 2px 3px rgb(229, 255, 0);
+}
+.skills-image-btn:hover {
+    cursor: pointer;
+    background-color: black;
+    color: yellow;
+    transition: 0.5s ease-in-out;
+}
+
+.skills-image-btn:active {
+    box-shadow: 0px 0px 10px gray;
+    transform: translateY(3px);
+}
+
+.button-action p{
+    margin: 20px;
+    text-align: center;
+}
+
 /* SKILLS */
 
 
 /* PROJECTS  */
+
+
+
 .folio-projects {
     width: 100%;
     padding: 70px;
@@ -550,7 +553,405 @@ hr {
 
 
 
-/* RESPONSIVE DESIGN */
+
+@media screen and (max-width:450px){
+   
+   body{
+    background-color: #070707;
+   }
+   .folio-navbar{
+    display: none;
+}
+
+.mobile-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0a192f9a;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+}
+
+.nav-logo img {
+    width: 40%;
+}
+
+.mobile-button {
+    width: 40%;
+
+}
+
+.menu-bar {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+
+}
+
+/* menu bar end */
+
+/* hero section  */
+
+
+.folio-hero-section {
+    width: 100%;
+    display: block;
+    padding: 20px;
+}
+
+
+
+.left-hero-section {
+    width: 100%;
+    padding: 0px;
+}
+.left-hero-section-content{
+    display: flex;
+    flex-direction: column;
+}
+.left-hero-section h1 {
+    font-size: 10px;
+    font-weight: 200;
+    color: #0740fc;
+    background-color: #05ed2c;
+    margin-top: 0px;
+}
+
+.left-hero-section p {
+    font-size: 1.2em;
+    color: #7D88A5;
+    text-align: justify;
+}
+
+.sign {
+    margin: 20px;
+    width: 30%;
+}
+
+.right-hero-section {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    border-bottom: 0px;
+    border-radius: 20px;
+}
+
+.hero-section-image {
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.right-hero-section img {
+    width: 100%;
+    z-index: 1;
+}
+
+/* hero section  */
+
+/* about section  */
+
+
+.folio-about-me {
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+}
+
+.about-me {
+    text-align: left;
+    font-size: 3em;
+    font-weight: 200;
+    color: #fcfcf9;
+}
+
+hr {
+    width: 100%;
+    opacity: 20%;
+}
+
+.box-about {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+}
+
+.right-about-me {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+}
+
+.left-about-me {
+    padding: 50px;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-about-me img {
+    width: 300px;
+    height: 350px;
+
+}
+
+.whatsapp {
+
+    right: -10px;
+    bottom: 280px;
+}
+
+/* about section  */
+
+/* Skills section  */
+
+
+.main-folio-about-skills{
+    width: 100%;
+    font-size: 4em;
+    color: white;
+    background-color: #1048e4;
+}
+
+.main-folio-skill{
+    padding: 20px;
+    width: 100%;
+}
+.block-main-folio-skill{
+    width: 100%;
+    display: flex;
+}
+.left-main-folio-skill{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: red;
+}
+.text-left-main-folio-skill{
+    width: 100%;
+    background-color: rgb(235, 213, 203);
+    justify-content: center;
+}
+
+
+.text-left-main-folio-skill{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(235, 213, 203);
+    align-items: center;
+    justify-content: center;
+}
+
+.right-main-folio-skill{
+    width: 50%;
+    background-color: yellow;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rishi-skills-image img{
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 2px 2px rgb(229, 255, 0);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.409));
+    border-radius: 20px;
+    border-top: 2px solid green;
+}
+
+.rishi-skills-image img:hover {
+    filter: grayscale(80);
+    border-top: 2px solid green;
+    box-shadow: 2px 2px rgb(229, 255, 0);
+}
+
+
+.bottom-main-folio-skill{
+width: 100%;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: blueviolet;
+}
+
+.bottom-main-folio-skill-button{
+    display: block;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.skills-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 10px;
+    width: 100%;
+    background-color: #05ed2c;
+}
+
+.skills-image-btn{
+    width: 20%;
+}
+.button-action p{
+    margin: 20px;
+    background-color: beige;
+    text-align: center;
+}
+
+/* Skills section  */
+
+
+
+
+/* PROJECTS DIV */
+
+.folio-projects {
+    width: 100%;
+    margin-top: 20rem;
+    padding: 0px;
+}
+
+
+.projects-box {
+    width: 100%;
+    padding: 0px;
+    display: block;
+    gap: 20px;
+}
+
+.about-projects {
+    font-size: 3em;
+}
+
+.top-projects {
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.projects-box-inside{
+    width: 100%;
+    margin-top: 10px;
+    padding: 30px;
+    border-top: 2px solid #009b53;
+    border-left: 2px solid #009b53;
+    box-shadow: 2px 3px rgb(229, 255, 0);
+    border-radius: 10px;
+}
+
+.projects-box-inside-tech-used {
+    opacity: 0.5;
+    width: 30%;
+    gap: 5px;
+    margin-top: 5px;
+
+}
+
+
+/* PROJECTS DIV */
+
+/* FOOTER DIV */
+
+.folio-footer {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-box i {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: #0A192F;
+}
+
+
+/* FOOTER DIV */
+
+
+/* FOOTER S0CIAL ICONS */
+
+.folio-button-social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-top {
+    margin-top: 0px;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    gap: 0em;
+    width: 100%;
+}
+
+.icon-box {
+    width: 100%;
+   display:flex;
+   justify-content: left;
+   margin: 10px;
+}
+
+.icon-box i {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    color: #0A192F;
+}
+
+.lhs-social {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 2em;
+    color: white;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+.lhs-social :hover {
+    color: rgb(18, 236, 58);
+}
+
+/* FOOTER S0CIAL ICONS */
+
+
+
+}
+
+
+/* RESPONSIVE DESIGN Tablet */
 @media only screen and (max-width:768px) {
 
     .folio-navbar {
@@ -563,7 +964,8 @@ hr {
         justify-content: space-between;
         background-color: #0a192f9a;
         -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);        padding: 20px;
+        backdrop-filter: blur(5px);
+        padding: 20px;
         position: fixed;
         z-index: 1;
     }
@@ -630,13 +1032,6 @@ hr {
         margin: 20px;
         width: 30%;
     }
-
-
-
-
-
-
-
 
     .right-hero-section {
         width: 50%;
@@ -721,134 +1116,98 @@ hr {
     /* Skills section  */
 
 
-
-
-    .folio-skills {
+    .main-folio-about-skills{
         width: 100%;
-        height: 100vh;
+        font-size: 4em;
+        color: white;
+    }
+    
+    .main-folio-skill{
         padding: 20px;
+        width: 100%;
     }
-
-    .about-skills {
-        font-size: 3em;
-        font-weight: 200;
-        color: #CCD6F6;
-    }
-
-    .folio-skills-block {
+    .block-main-folio-skill{
         width: 100%;
         display: flex;
-        padding: 20px;
-
     }
-
-    .left-skills {
+    .left-main-folio-skill{
         width: 50%;
         display: flex;
-        justify-content: safe;
-        flex-direction: column;
-        color: #CCD6F6;
-    }
-
-    .left-skills-top {
-        width: 100%;
-    }
-
-    .left-skills-top-text {
-        padding: 5px;
-        text-align: justify;
-        font-size: 1.090em;
-
-    }
-
-    .left-skills-button {
-        width: 120%;
-        display: flex;
-        align-items: center;
         justify-content: center;
-        gap: 2em;
-        margin-top: 2rem;
-        margin-left: 8rem;
-    }
-
-    .left-skills-down {
-        margin-top: 1rem;
-        text-align: justify;
-        width: 100%;
-        margin-left: 10rem;
-    }
-
-
-    .skills-image button {
-        width: 100%;
         padding: 20px;
-        border: none;
-        border-radius: 0px 70px 40px 80px;
+        background-color: red;
+    }
+    .text-left-main-folio-skill{
+        width: 100%;
+        background-color: rgb(235, 213, 203);
+        justify-content: center;
+    }
+    
+    
+    .text-left-main-folio-skill{
         display: flex;
-        margin-bottom: 20px;
+        padding: 20px;
+        width: 100%;
+        background-color: rgb(235, 213, 203);
         align-items: center;
         justify-content: center;
-        color: black;
-        font-size: 1em;
-        border-top: 2px solid #009b53;
-        border-left: 2px solid #009b53;
-        box-shadow: 2px 3px rgb(229, 255, 0);
     }
-
-    .skills-image-btn:hover {
-        cursor: pointer;
-        background-color: black;
-        color: yellow;
-        transition: 0.5s ease-in-out;
-    }
-
-    .skills-image-btn:active {
-        box-shadow: 0px 0px 10px gray;
-        transform: translateY(3px);
-    }
-
-
-    .right-skills {
+    
+    .right-main-folio-skill{
         width: 50%;
-        height: 71%;
+        background-color: yellow;
+        padding: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2em;
-        padding: 0%;
     }
-
-    .rishi-skills-image {
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .rishi-skills-image img {
-
-        width: 80%;
+   
+    .rishi-skills-image img{
+        object-fit: cover;
+        width: 100%;
         box-shadow: 2px 2px rgb(229, 255, 0);
         filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.409));
-        border-radius: 0px 70px 40px 80px;
+        border-radius: 20px;
         border-top: 2px solid green;
     }
-
+    
     .rishi-skills-image img:hover {
         filter: grayscale(80);
         border-top: 2px solid green;
         box-shadow: 2px 2px rgb(229, 255, 0);
     }
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    .bottom-main-folio-skill{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    }
+    
+    .bottom-main-folio-skill-button{
+        display: block;
+        width: 100%;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .skills-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        gap: 10px;
+        width: 100%;
+        background-color: #05ed2c;
+    }
+    
+    .skills-image-btn{
+        width: 20%;
+    }
+    
     /* Skills section  */
 
 
@@ -883,22 +1242,13 @@ hr {
     .projects-box-inside-tech-used {
         opacity: 0.5;
         width: 30%;
-        gap: 10px;
-        margin-top: 0px;
-        font-size: 12px;
+        gap: 5px;
+        margin-top: 5px;
+
     }
 
 
     /* PROJECTS DIV */
-
-
-
-
-
-
-
-
-
 
     /* FOOTER DIV */
 
