@@ -6,6 +6,10 @@
 
 /* Website Styling */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0A192F;
 }
