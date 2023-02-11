@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="/images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
@@ -66,11 +66,13 @@
     <!-- Hero Section -->
     <section class="folio-hero-section" id="Home">
         <div class="left-hero-section">
+            <div class="left-hero-section-content">
             <h1>I'm Rishi Ratan Mishra</h1>
             <p>A Web Development and SEO Specialist driven by a passion for creating high-performing digital
                 experiences. Whether it's crafting custom websites or optimizing them for search engines, I use my
                 skills to help businesses reach new heights and achieve their online goals.</p>
-            <img src="images/rishi-sign.png" class="sign" alt="sign">
+            <img src="/images/rishi-sign.png" class="sign" alt="sign">
+        </div>
         </div>
 
 
@@ -122,68 +124,66 @@
     <!-- ABOUT ME -->
 
     <!-- SKILLS -->
-    <section class="folio-skills" id="Skills">
-        <div class="about-skills">
-            <span style="color: green;">.</span>Skills
-           
-        </div>
-        <hr>
-        <div class="folio-skills-block">
-            <div class="left-skills">
-                <div class="left-skills-top">
-                    <p class="left-skills-top-text">Rishi Ratan Mishra has a strong background in web development, with
-                        expertise in HTML, CSS, JavaScript, ExpressJS, and React. He has experience working with
-                        databases, using MySQL, and has a solid understanding of version control using Github.
-                        Additionally, he has knowledge of the content management system, WordPress, and has an
-                        understanding of search engine optimization (SEO). Rishi's technical skills are complemented by
-                        his strong problem-solving, communication, and teamwork abilities, making him a valuable asset
-                        to any web development project.
 
+ <section class="main-folio-skill" id="#Skills">
+    
+    <div class="main-folio-about-skills"><span style="color: green;">.</span>Skills  </div>
+    <hr>
+   <div class="block-main-folio-skill">
+ <div class="left-main-folio-skill">
 
+<div class="text-left-main-folio-skill">
+    <p class="left-skills-top-text">Rishi Ratan Mishra has a strong background in web development, with
+        expertise in HTML, CSS, JavaScript, ExpressJS, and React. He has experience working with
+        databases, using MySQL, and has a solid understanding of version control using Github.
+        Additionally, he has knowledge of the content management system, WordPress, and has an
+        understanding of search engine optimization (SEO). Rishi's technical skills are complemented by
+        his strong problem-solving, communication, and teamwork abilities, making him a valuable asset
+        to any web development project.
+    </p>
+</div>
+</div>
+<div class="right-main-folio-skill">
+    <div class="rishi-skills-image">
+        <img src="images/rishi-tree.jpg" alt="rishi">
+           </div>
+</div>
+</div>
 
-                    </p>
-                </div>
-          <div class="left-skills-button">
+<div class="bottom-main-folio-skill">
 
-            <div class="skills-image">
-                <button class="skills-image-btn" type="button" onclick="onHTML()">HTML</button>
-                <button class="skills-image-btn" type="button" onclick="onCSS()">CSS</button>
+    <div class="bottom-main-folio-skill-button">
 
-            </div>
-            <div class="skills-image">
-                <button class="skills-image-btn" type="button" onclick="onJS()">JavaScript</button>
-                <button class="skills-image-btn" type="button" onclick="onReact()">React</button>
-            </div>
-            <div class="skills-image">
-                <button class="skills-image-btn" type="button" onclick="onEJS()">expressJS</button>
-                <button class="skills-image-btn" type="button" onclick="onGit()">Github</button>
-            </div>
-            <div class="skills-image">
-                <button class="skills-image-btn" type="button" onclick="onmySQL()">mySQL</button>
-                <button class="skills-image-btn" type="button" onclick="onWP()">Wordpress</button>
-            </div>
-            </div>
-
-
-
-
-
-
-                <div class="left-skills-down">
-                    <p id="btn-text"></p>
-                </div>
-            </div>
-
-            <div class="right-skills">
-        <div class="rishi-skills-image">
-         <img src="images/rishi-tree.jpg" alt="rishi">
-            </div>
-            
-            </div>
+        <div class="skills-button">
+            <button class="skills-image-btn" type="button" onclick="onHTML()">HTML</button>
+            <button class="skills-image-btn" type="button" onclick="onCSS()">CSS</button>
+            <button class="skills-image-btn" type="button" onclick="onJS()">JavaScript</button>
         </div>
 
-    </section>
-    <!-- SKILLS -->
+       
+
+        <div class="skills-button">
+            <button class="skills-image-btn" type="button" onclick="onReact()">React</button>
+            <button class="skills-image-btn" type="button" onclick="onEJS()">expressJS</button>
+            <button class="skills-image-btn" type="button" onclick="onGit()">Github</button>
+        </div>
+
+        <div class="skills-button">
+            <button class="skills-image-btn" type="button" onclick="onmySQL()">mySQL</button>
+            <button class="skills-image-btn" type="button" onclick="onWP()">Wordpress</button>
+            <button class="skills-image-btn" type="button" onclick="onSEO()">SEO</button>
+
+        </div>
+
+        </div>
+</div>
+<div class="button-action">
+<p id="btn-text"></p>
+</div>
+</section>
+
+
+ <!-- SKILLS -->
 
 
 <!-- PROJECTS -->
@@ -394,7 +394,7 @@
 
 
 
-    <script src="folio.js"></script>
+    <script src="/folio.js"></script>
 
 </body>
 
