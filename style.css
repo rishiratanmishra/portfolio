@@ -6,7 +6,7 @@
 
 /* Website Styling */
 
-@media (max-width: 600px) {
+@media (max-width: 320px) {
   body {
     background-color: #blue;
   }
