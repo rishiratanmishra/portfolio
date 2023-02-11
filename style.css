@@ -6,6 +6,13 @@
 
 /* Website Styling */
 
+@media (max-width: 600px) {
+  body {
+    background-color: #blue;
+  }
+}
+
+
 html{
     scroll-behavior: smooth;
 }
