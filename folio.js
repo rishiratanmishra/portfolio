@@ -1,53 +1,3 @@
-// Hero Section Floating Button
-
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  var button = document.querySelector('.hiring-hero-section-button');
-
-  if (currentScrollPos > 50) {
-    button.style.position = 'fixed';
-    button.style.top = '10px';
-    button.style.right = '20px';
-    button.style.backgroundColor = '#0A1';
-  } else {
-    button.style.position = 'absolute';
-    button.style.top = '150px';
-    button.style.right = '55px';
-    button.style.backgroundColor = '';
-  }
-
-  button.style.transition = 'top 0.5s ease-in-out, right 0.5s ease-in-out';
-};
-
-// Hero Section Floating Button
-
-var mql = window.matchMedia("(max-width: 768px)");
-
-function handleMediaChange(mql) {
-  var button = document.querySelector('.hiring-hero-section-button');
-
-  if (mql.matches) {
-    button.style.position = 'fixed';
-    button.style.top = '50%';
-    button.style.left = '50%';
-    button.style.transform = 'translate(-50%, -0%)';
-
-  } else {
-    button.style.position = 'absolute';
-    button.style.top = '150px';
-    button.style.right = '55px';
-    button.style.backgroundColor = '#0A1';
-    button.style.transform = 'none';
-  }
-  
-  button.style.transition = 'top 0.5s ease-in-out, left 0.5s ease-in-out, transform 0.5s ease-in-out';
-}
-
-mql.addListener(handleMediaChange);
-handleMediaChange(mql);
-
-
-
 
 // Skills Button Code
 
@@ -96,6 +46,14 @@ function onmySQL() {
 function onWP() {
   var btnclick = (document.getElementById('btn-text').innerText =
     'Rishi has knowledge of the content management system, WordPress, and has an understanding of search engine optimization (SEO). ');
+    document.getElementById("btn-text").style.color = "yellow";
+
+}
+
+
+function onSEO() {
+  var btnclick = (document.getElementById('btn-text').innerText =
+    'Rishi has strong knowledge of the Search Engine Optimization (SEO). ');
     document.getElementById("btn-text").style.color = "yellow";
 
 }
