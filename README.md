@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://founder.zolaha.com/linkedindp.jpg" alt="Rishi Ratan Mishra">
+  <img src="https://founder.zolaha.com/linkedindp.jpg" alt="Rishi Ratan Mishra" width="200" height="200">
 </p>
 
 # Rishi Ratan Mishra - Portfolio
